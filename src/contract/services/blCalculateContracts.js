@@ -21,7 +21,7 @@ const _getWinner = ({ party1Value, party2Value }) => {
   return 'tie';
 };
 
-const blCalculateContracts = async ({ party1, party2 }) => {
+const blCalculateContracts = ({ party1, party2 }) => {
   const party1Value = _calculateParty(party1);
   const party2Value = _calculateParty(party2);
 

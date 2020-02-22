@@ -1,4 +1,4 @@
-const calculateWithRules = ({ party, rules }) => {
+const calculateWithRules = ({ party = '', rules = {} }) => {
   const partySplitted = party.split('');
   const value = partySplitted.reduce((acc, currentLetter) => {
     const newValue = rules[currentLetter] || 0;
