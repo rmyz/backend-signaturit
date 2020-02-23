@@ -7,10 +7,16 @@ This project is structured as a `Clean Architecture`, following `Domain Driven D
 
 ## Commands
 
-First of all, we need to install the project: 
+First of all, we need to install the project:
 
 ```
   npm i
+```
+
+And you need to create an `.env` file in the root of the project with the following content:
+
+```
+PORT=3025
 ```
 
 After that, we can both launch the dev server or the test runner.
