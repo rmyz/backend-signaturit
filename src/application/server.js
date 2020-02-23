@@ -1,5 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
 import routes from '../infra/routes';
 import { port } from './config';
@@ -7,6 +8,7 @@ import { port } from './config';
 const app = express();
 
 app.use(bodyParser.json());
+app.use(cors());
 
 Object.keys(routes).forEach(key => {
   app.use(`${key}`, routes[key]);
